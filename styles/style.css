@@ -1,0 +1,187 @@
+/* Todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* !Cuerpo de la pagina */
+body {
+    background: url(../images/Goku.webp);
+    background-size: cover;
+    background-position: center top;
+
+}
+
+/* !Contendor de todo el poyecto */
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* !Contenedor del contador */
+.div-contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .3);
+    width: 320px;
+    height: max-content;
+    box-shadow: 1px 1px 15px -3px black;
+}
+
+/* !Contador */
+.contador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* !Contenedor de los numeros de clicks */
+.div-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    width: 90%;
+    height: 50px;
+    font-size: 30px;
+}
+
+.div_divs-surest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+
+/* !Contenedor de los botones para sumar y restar */
+.div-surest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+}
+
+/* !Boton para restar clicks del contador */
+.div-resta {
+    width: 100%;
+    height: 30px;
+}
+
+.resta {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.resta:hover {
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+}
+
+/* !Boton para sumar clicks del contador */
+.div-suma {
+    width: 100%;
+    height: 30px;
+}
+
+.suma {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.suma:hover {
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* !Boton para resetear el contador */
+.div_div-resetear {
+    width: 100%;
+    height: 30px;
+}
+
+.div-resetear {
+    width: 100%;
+    height: 30px;
+}
+
+.resetear {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.resetear:hover {
+    cursor: pointer;
+    background: greenyellow;
+    color: black;
+    border: none;
+}
+
+/* !Media Query */
+/* *Laptops */
+@media (min-width:1024px) {
+    .div-contador {
+        width: 800px;
+        height: 500px;
+    }
+
+    .div-numeros {
+        height: 80px;
+    }
+
+    .div-surest {
+        margin: 0;
+    }
+
+    .div-suma {
+        height: 60px;
+    }
+
+    .suma {
+        font-size: 20px;
+    }
+
+    .div-resta {
+        height: 60px;
+    }
+
+    .resta {
+        font-size: 20px;
+    }
+
+    .div-resetear {
+        height: 60px;
+    }
+
+    .resetear {
+        font-size: 20px;
+    }
+}
+
+/* *Celular */
+@media (max-width:375px) {
+    .div-contador {
+        width: 300px;
+    }
+}
